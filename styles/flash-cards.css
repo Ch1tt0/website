@@ -1,0 +1,27 @@
+body {
+  background-color: dimgray;
+}
+
+#container {
+  display: flex-box;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 1em;
+
+  outline: 0.3em solid bisque;
+  border-radius: 0.3em;
+}
+
+#flash-card {
+  display: flex;
+  width: 500px;
+  height: 375px;
+}
+
+#flash-card-select {
+  margin-top: 1em;
+}
