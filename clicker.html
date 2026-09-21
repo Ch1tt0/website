@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chittos' Blog | Clicker</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/clicker.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="styles/fonts.css" />
+  </head>
+  <body>
+    <div id="container">
+      <p id="event-paragraph"></p>
+      <button id="step-button" onclick="step()">STEP</button>
+      <div id="stats-container">
+        <span for="xp-info">⭐ 0/100</span>
+        <span for="health-info">❤️ 100/100</span>
+        <span for="mana-info">🌀 20/20</span>
+      </div>
+    </div>
+    <footer>
+      <a href="/license.html" hreflang="en_US">
+        Copyright (c)
+        <script>
+          document.currentScript.outerText = new Date(Date.now()).getFullYear();
+        </script>
+        Chitto
+      </a>
+    </footer>
+    <script>
+      const EVENTS = [
+        // Ambient & Exploration
+        "The air grows cold as you step deeper into the dungeon.",
+        "You hear a faint rustling in the bushes nearby.",
+        "The cobblestone path gives way to muddy tracks.",
+        "A gentle breeze carries the scent of pine and old magic.",
+        "You spot a strange ruin in the distance.",
+        "The echoing sound of dripping water is your only companion.",
+        "Thick fog rolls in, reducing your visibility to almost nothing.",
+
+        // Combat & Enemies
+        "A wild slime drops from the ceiling! Prepare for battle.",
+        "Goblin ambush! They demand your gold or your life.",
+        "You hear the heavy, rhythmic footsteps of an ogre approaching.",
+        "A spectral figure blocks the corridor, whispering ancient curses.",
+        "Bandits leap from the shadows with weapons drawn!",
+
+        // Items & Loot
+        "Something glints in the dirt. You found 5 Gold Coins!",
+        "You discover a discarded leather pouch containing a Minor Health Potion.",
+        "You pry a shimmering Sapphire loose from the cavern wall.",
+        "An ancient, moss-covered chest sits off the path. Dare you open it?",
+        "You stumble upon a rare medicinal herb growing near a hollow log.",
+
+        // Status, Hazards & Fatigue
+        "Your legs are growing heavy. Consider making camp soon.",
+        "You catch your second wind! Stamina restored.",
+        "You stub your toe on an overgrown root. Lose 1 HP.",
+        "Ouch! You stepped on a hidden spike trap. Lose 10 HP.",
+        "The harsh weather begins to drain your endurance.",
+        "You take a brief rest by a stream and feel completely rejuvenated.",
+
+        // NPCs & Lore
+        "A traveling merchant crosses your path, offering exotic wares.",
+        "You find a faded journal entry: 'Day 43. We should never have come here.'",
+        "A mysterious hooded figure nods at you before vanishing into the mist.",
+        "A talking frog asks you for directions to the nearest pond.",
+        "You pass an old stone monolith covered in glowing runes.",
+      ];
+
+      const EVENT_PARAGRAPH = document.getElementById("event-paragraph");
+
+      let stepCounter = 0;
+
+      function step() {
+        stepCounter++;
+
+        EVENT_PARAGRAPH.textContent = EVENTS[Math.floor(Math.random() * 28)];
+      }
+    </script>
+  </body>
+</html>

@@ -49,3 +49,10 @@ p {
 a {
   text-decoration: none;
 }
+
+footer {
+  position: fixed;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
