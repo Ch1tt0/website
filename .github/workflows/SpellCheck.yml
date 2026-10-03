@@ -19,3 +19,4 @@ jobs:
       - uses: streetsidesoftware/cspell-action@v9
         with:
           summary: true
+          incremental_files_only: false
