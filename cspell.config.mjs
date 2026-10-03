@@ -1,5 +1,5 @@
-import { defineConfig } from 'cspell';
+import { defineConfig } from "cspell";
 
 export default defineConfig({
-  words: ['Camen']
+  words: ["Camen"],
 });

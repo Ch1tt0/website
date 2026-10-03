@@ -108,7 +108,7 @@ textarea {
 
 .visually-hidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip-path: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -127,7 +127,7 @@ textarea {
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
-  clip: auto;
+  clip-path: auto;
   height: auto;
   margin: 0;
   overflow: visible;
@@ -244,4 +244,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

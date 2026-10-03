@@ -7,7 +7,11 @@
     ".vscode",
     "megalinter",
     "package-lock.json",
-    "report"
+    "report",
+    ".gitattributes",
+    ".gitignore",
+    ".jscpd.json",
+    "site.webmanifest"
   ],
   "language": "en",
   "noConfigSearch": true,
