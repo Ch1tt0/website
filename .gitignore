@@ -6,9 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# I don't like it
-package-lock.json
-
 # Editor specific
 .vscode
 
